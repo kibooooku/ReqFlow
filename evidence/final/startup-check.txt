@@ -1,0 +1,11 @@
+ReqFlow launcher dependency probe: Windows PowerShell 5.1
+Checked at: 2026-10-12T15:30:43.427930+00:00
+run.ps1 SHA256: 0968e0fca0cd8e8fcf8b5e80695720a2f0d6594c76f26f3f8a85697725c6c516
+UTF-8 BOM: True
+Probe: & '.\.venv\Scripts\python.exe' -c "import importlib.util, sys; sys.exit(0 if all(importlib.util.find_spec(m) for m in ('fastapi', 'uvicorn', 'pydantic')) else 1)"
+
+fresh-venv: passed=True; PowerShell=5.1.26100.9444; probe_exit=1; branch=install-dependencies; continued=True; stderr_bytes=0
+installed-venv: passed=True; PowerShell=5.1.26100.9444; probe_exit=0; branch=start-server; continued=True; stderr_bytes=0
+
+OVERALL PASSED: True
+Boundary: Executed the exact run.ps1 dependency probe in Windows PowerShell 5.1, substituting only the interpreter path for each environment. The launcher decision branches were represented by markers. No packages installed, no network accessed, and no server started.

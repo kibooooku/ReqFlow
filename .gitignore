@@ -1,0 +1,40 @@
+# Python and local development
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.coverage
+.coverage.*
+htmlcov/
+node_modules/
+.test-tmp/
+
+# Runtime data and sessions: regenerate from app/seed.py
+data/
+*.db
+*.db-*
+*.sqlite
+*.sqlite-*
+*.sqlite3
+*.sqlite3-*
+
+# Local configuration and credentials
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.p12
+*.pfx
+credentials.json
+credentials.*.json
+secrets.json
+secrets.*.json
+.secrets/
+
+# Local editor and OS metadata
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db

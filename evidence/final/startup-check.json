@@ -1,0 +1,38 @@
+{
+  "checked_at": "2026-10-12T15:30:43.427930+00:00",
+  "source": "run.ps1",
+  "source_sha256": "0968e0fca0cd8e8fcf8b5e80695720a2f0d6594c76f26f3f8a85697725c6c516",
+  "utf8_bom": true,
+  "exact_dependency_probe": "& '.\\.venv\\Scripts\\python.exe' -c \"import importlib.util, sys; sys.exit(0 if all(importlib.util.find_spec(m) for m in ('fastapi', 'uvicorn', 'pydantic')) else 1)\"",
+  "harness": ".test-tmp/startup-check/probe-harness.ps1",
+  "scope": "Executed the exact run.ps1 dependency probe in Windows PowerShell 5.1, substituting only the interpreter path for each environment. The launcher decision branches were represented by markers. No packages installed, no network accessed, and no server started.",
+  "cases": [
+    {
+      "powershell_version": "5.1.26100.9444",
+      "python": "$PROJECT_ROOT\\.test-tmp\\startup-check\\empty-venv\\Scripts\\python.exe",
+      "continued_after_probe": true,
+      "native_exit_code": 1,
+      "branch": "install-dependencies",
+      "exception": null,
+      "case": "fresh-venv",
+      "shell_exit_code": 0,
+      "stderr_bytes": 0,
+      "expected_branch": "install-dependencies",
+      "passed": true
+    },
+    {
+      "powershell_version": "5.1.26100.9444",
+      "python": "$PROJECT_ROOT\\.venv\\Scripts\\python.exe",
+      "continued_after_probe": true,
+      "native_exit_code": 0,
+      "branch": "start-server",
+      "exception": null,
+      "case": "installed-venv",
+      "shell_exit_code": 0,
+      "stderr_bytes": 0,
+      "expected_branch": "start-server",
+      "passed": true
+    }
+  ],
+  "passed": true
+}

@@ -1,0 +1,18 @@
+<?xml version='1.0' encoding='utf-8'?>
+<testsuites name="pytest tests"><testsuite name="pytest" errors="0" failures="4" skipped="0" tests="4" time="13.069" timestamp="2026-10-12T23:19:11.488124+08:00" hostname="REDACTED_HOST"><testcase classname="tests.test_review_findings" name="test_document_role_is_rechecked_inside_write_transaction" time="3.802"><failure message="AssertionError: {&quot;id&quot;:3,&quot;project_id&quot;:1,&quot;title&quot;:&quot;must not survive revoked permission&quot;,&quot;description&quot;:&quot;&quot;}&#10;assert 201 == 403&#10; +  where 201 = &lt;Response [201 Created]&gt;.status_code">tests\test_review_findings.py:32: in test_document_role_is_rechecked_inside_write_transaction
+    assert response.status_code == 403, response.text
+E   AssertionError: {"id":3,"project_id":1,"title":"must not survive revoked permission","description":""}
+E   assert 201 == 403
+E    +  where 201 = &lt;Response [201 Created]&gt;.status_code</failure></testcase><testcase classname="tests.test_review_findings" name="test_non_ascii_csrf_header_returns_forbidden_not_server_error" time="3.672"><failure message="AssertionError: Internal Server Error&#10;assert 500 == 403&#10; +  where 500 = &lt;Response [500 Internal Server Error]&gt;.status_code">tests\test_review_findings.py:41: in test_non_ascii_csrf_header_returns_forbidden_not_server_error
+    assert response.status_code == 403, response.text
+E   AssertionError: Internal Server Error
+E   assert 500 == 403
+E    +  where 500 = &lt;Response [500 Internal Server Error]&gt;.status_code</failure></testcase><testcase classname="tests.test_review_findings" name="test_password_whitespace_is_preserved_as_credential_data" time="4.855"><failure message="AssertionError: Distinct passwords must not be normalized to the same credential&#10;assert 200 == 401&#10; +  where 200 = &lt;Response [200 OK]&gt;.status_code">tests\test_review_findings.py:57: in test_password_whitespace_is_preserved_as_credential_data
+    assert changed.status_code == 401, 'Distinct passwords must not be normalized to the same credential'
+E   AssertionError: Distinct passwords must not be normalized to the same credential
+E   assert 200 == 401
+E    +  where 200 = &lt;Response [200 OK]&gt;.status_code</failure></testcase><testcase classname="tests.test_review_findings" name="test_body_limit_stops_reading_after_crossing_threshold" time="0.048"><failure message="AssertionError: Consumed 20 chunks (1310720 bytes) before rejecting a 256KB-limited body&#10;assert 20 &lt;= 5&#10; +  where 20 = len([0, 1, 2, 3, 4, 5, ...])">tests\test_review_findings.py:87: in test_body_limit_stops_reading_after_crossing_threshold
+    assert len(consumed) &lt;= 5, f'Consumed {len(consumed)} chunks ({len(consumed) * len(chunk)} bytes) before rejecting a 256KB-limited body'
+E   AssertionError: Consumed 20 chunks (1310720 bytes) before rejecting a 256KB-limited body
+E   assert 20 &lt;= 5
+E    +  where 20 = len([0, 1, 2, 3, 4, 5, ...])</failure></testcase></testsuite></testsuites>

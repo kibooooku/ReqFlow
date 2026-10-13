@@ -1,0 +1,37 @@
+{
+  "started_at": "2026-10-12T15:18:00.887565+00:00",
+  "base_url": "http://127.0.0.1:8765",
+  "browser": "Microsoft Edge (headless, Playwright)",
+  "requirement_uid": "UI-1518002d0e",
+  "steps": [
+    {
+      "name": "分析员登录真实后端，仪表盘加载成功",
+      "passed": true,
+      "at": "2026-10-12T15:18:05.651652+00:00"
+    }
+  ],
+  "console_errors": [],
+  "http_errors": [
+    {
+      "status": 500,
+      "url": "http://127.0.0.1:8765/api/projects/1/documents"
+    },
+    {
+      "status": 500,
+      "url": "http://127.0.0.1:8765/api/projects/1/members"
+    },
+    {
+      "status": 500,
+      "url": "http://127.0.0.1:8765/api/projects/1/requirements?"
+    }
+  ],
+  "screenshots": [
+    "evidence\\final\\00-login.png",
+    "evidence\\final\\01-dashboard.png",
+    "evidence\\final\\browser-failure.png"
+  ],
+  "passed": false,
+  "failure": "Locator expected to be visible\nActual value: None\nError: element(s) not found \nCall log:\n  - Expect \"to_be_visible\" get_by_role(\"heading\", name=\"需求管理\", exact=True) with timeout 5000ms\n  - waiting for get_by_role(\"heading\", name=\"需求管理\", exact=True)\n\nAria snapshot:\n- complementary:\n  - text: R ReqFlow REQUIREMENTS IN FLOW 当前工作空间 PROJECT\n  - combobox \"切换工作空间\":\n    - option \"校园实验室预约系统\" [selected]\n  - navigation \"主导航\":\n    - button \"总览仪表盘\"\n    - button \"需求管理\"\n    - button \"需求评审\"\n    - button \"追踪与验证\"\n    - button \"版本基线\"\n    - button \"变更控制\"\n    - button \"审计记录\"\n    - button \"项目成员\"\n  - text: 本地演示环境\n  - paragraph: 定义 · 评审 · 追踪 · 演进\n- banner:\n  - button \"展开导航\"\n  - text: 工作空间\n  - strong: 需求管理\n  - text: 数据实时保存 同学 需求分析员 · 林同学 分析员\n  - button \"退出\"\n- main:\n  - text: 请求失败（500），请稍后重试。\n  - button \"重新加载\"\n- status",
+  "traceback": "Traceback (most recent call last):\n  File \"$PROJECT_ROOT\\scripts\\browser_check.py\", line 97, in run\n    nav(\"requirements\", \"需求管理\")\n  File \"$PROJECT_ROOT\\scripts\\browser_check.py\", line 73, in nav\n    expect(page.get_by_role(\"heading\", name=heading, exact=True)).to_be_visible()\n  File \"$PROJECT_ROOT\\.venv\\Lib\\site-packages\\playwright\\sync_api\\_generated.py\", line 23501, in to_be_visible\n    self._sync(\n  File \"$PROJECT_ROOT\\.venv\\Lib\\site-packages\\playwright\\_impl\\_sync_base.py\", line 115, in _sync\n    return task.result()\n           ^^^^^^^^^^^^^\n  File \"$PROJECT_ROOT\\.venv\\Lib\\site-packages\\playwright\\_impl\\_assertions.py\", line 852, in to_be_visible\n    await self._expect_impl(\n  File \"$PROJECT_ROOT\\.venv\\Lib\\site-packages\\playwright\\_impl\\_assertions.py\", line 128, in _expect_impl\n    _record_soft_or_raise(\n  File \"$PROJECT_ROOT\\.venv\\Lib\\site-packages\\playwright\\_impl\\_assertions.py\", line 60, in _record_soft_or_raise\n    raise error\nAssertionError: Locator expected to be visible\nActual value: None\nError: element(s) not found \nCall log:\n  - Expect \"to_be_visible\" get_by_role(\"heading\", name=\"需求管理\", exact=True) with timeout 5000ms\n  - waiting for get_by_role(\"heading\", name=\"需求管理\", exact=True)\n\nAria snapshot:\n- complementary:\n  - text: R ReqFlow REQUIREMENTS IN FLOW 当前工作空间 PROJECT\n  - combobox \"切换工作空间\":\n    - option \"校园实验室预约系统\" [selected]\n  - navigation \"主导航\":\n    - button \"总览仪表盘\"\n    - button \"需求管理\"\n    - button \"需求评审\"\n    - button \"追踪与验证\"\n    - button \"版本基线\"\n    - button \"变更控制\"\n    - button \"审计记录\"\n    - button \"项目成员\"\n  - text: 本地演示环境\n  - paragraph: 定义 · 评审 · 追踪 · 演进\n- banner:\n  - button \"展开导航\"\n  - text: 工作空间\n  - strong: 需求管理\n  - text: 数据实时保存 同学 需求分析员 · 林同学 分析员\n  - button \"退出\"\n- main:\n  - text: 请求失败（500），请稍后重试。\n  - button \"重新加载\"\n- status\n",
+  "finished_at": "2026-10-12T15:18:10.767953+00:00"
+}

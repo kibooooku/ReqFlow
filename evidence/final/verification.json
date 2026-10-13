@@ -1,0 +1,33 @@
+{
+  "generated_at": "2026-10-12T15:31:49.016154+00:00",
+  "automated_tests": {
+    "tests": "50",
+    "errors": "0",
+    "failures": "0",
+    "skipped": "0",
+    "time": "188.739"
+  },
+  "python_statement_coverage": {
+    "covered_lines": 861,
+    "num_statements": 914,
+    "percent_covered": 94.20131291028446,
+    "percent_covered_display": "94",
+    "missing_lines": 53,
+    "excluded_lines": 0,
+    "percent_statements_covered": 94.20131291028446,
+    "percent_statements_covered_display": "94"
+  },
+  "browser": {
+    "passed": true,
+    "steps": 16,
+    "console_errors": 0,
+    "http_errors": 0,
+    "screenshots": 10,
+    "browser": "Microsoft Edge (headless, Playwright)"
+  },
+  "startup_probe": {
+    "passed": true,
+    "evidence": "startup-check.json"
+  },
+  "scope": "Python API/service tests, Edge UI workflow and PowerShell dependency-probe control flow are counted separately."
+}

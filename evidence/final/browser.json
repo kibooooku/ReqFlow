@@ -1,0 +1,104 @@
+{
+  "started_at": "2026-10-12T15:22:56.518538+00:00",
+  "base_url": "http://127.0.0.1:8765",
+  "browser": "Microsoft Edge (headless, Playwright)",
+  "requirement_uid": "UI-15225687b8",
+  "steps": [
+    {
+      "name": "分析员登录真实后端，仪表盘加载成功",
+      "passed": true,
+      "at": "2026-10-12T15:23:00.740412+00:00"
+    },
+    {
+      "name": "通过需求表单创建草稿并确认列表持久化",
+      "passed": true,
+      "at": "2026-10-12T15:23:01.296640+00:00"
+    },
+    {
+      "name": "草稿提交给独立评审员，列表显示评审中",
+      "passed": true,
+      "at": "2026-10-12T15:23:07.285350+00:00"
+    },
+    {
+      "name": "提交人界面没有自审按钮",
+      "passed": true,
+      "at": "2026-10-12T15:23:07.387146+00:00"
+    },
+    {
+      "name": "需求中的HTML样式输入按普通文字呈现，不执行或创建标签",
+      "passed": true,
+      "at": "2026-10-12T15:23:08.515386+00:00"
+    },
+    {
+      "name": "切换指定评审员，查看需求后独立批准",
+      "passed": true,
+      "at": "2026-10-12T15:23:14.268221+00:00"
+    },
+    {
+      "name": "新建关联测试项，追踪矩阵显示覆盖证据",
+      "passed": true,
+      "at": "2026-10-12T15:23:15.542110+00:00"
+    },
+    {
+      "name": "编辑验证项并使用版本号完成乐观锁更新",
+      "passed": true,
+      "at": "2026-10-12T15:23:21.354400+00:00"
+    },
+    {
+      "name": "冻结指定批准需求基线，未误报其他既存需求为新增",
+      "passed": true,
+      "at": "2026-10-12T15:23:21.923673+00:00"
+    },
+    {
+      "name": "提交变更并查看关联测试影响；提交人没有自批入口",
+      "passed": true,
+      "at": "2026-10-12T15:23:28.013602+00:00"
+    },
+    {
+      "name": "另一成员审查拟修改内容并批准变更",
+      "passed": true,
+      "at": "2026-10-12T15:23:29.297257+00:00"
+    },
+    {
+      "name": "比较显示版本已修改，原基线仍保留30分钟验收标准",
+      "passed": true,
+      "at": "2026-10-12T15:23:34.648420+00:00"
+    },
+    {
+      "name": "当前需求显示新版本，CSV导出包含真实新增记录",
+      "passed": true,
+      "at": "2026-10-12T15:23:35.788791+00:00"
+    },
+    {
+      "name": "观察员能够阅读需求且没有维护或变更操作入口",
+      "passed": true,
+      "at": "2026-10-12T15:23:36.974029+00:00"
+    },
+    {
+      "name": "390px窄屏导航及仪表盘可用",
+      "passed": true,
+      "at": "2026-10-12T15:23:37.763479+00:00"
+    },
+    {
+      "name": "审计列表记录完整需求、评审与变更操作",
+      "passed": true,
+      "at": "2026-10-12T15:23:38.078199+00:00"
+    }
+  ],
+  "console_errors": [],
+  "http_errors": [],
+  "screenshots": [
+    "evidence\\final\\00-login.png",
+    "evidence\\final\\01-dashboard.png",
+    "evidence\\final\\02-requirements.png",
+    "evidence\\final\\03-independent-review.png",
+    "evidence\\final\\04-traceability.png",
+    "evidence\\final\\05-change-impact.png",
+    "evidence\\final\\06-baseline-comparison.png",
+    "evidence\\final\\07-version-history.png",
+    "evidence\\final\\08-mobile-dashboard.png",
+    "evidence\\final\\09-audit-trail.png"
+  ],
+  "passed": true,
+  "finished_at": "2026-10-12T15:23:38.078199+00:00"
+}
